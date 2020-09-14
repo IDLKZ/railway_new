@@ -21,4 +21,8 @@
 <li class="{{ Request::is('contacts*') ? 'active' : '' }}">
     <a href="{{ route('contacts.index') }}"><i class="fa fa-envelope"></i><span>Контакты</span></a>
 </li>
+<hr/>
+<li >
+    <a href="/logout"><i class="fa fa-sign-out"></i><span>Выход</span></a>
+</li>
 

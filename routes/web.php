@@ -20,7 +20,11 @@ Route::get("/docs",[\App\Http\Controllers\FrontendController::class,"document"])
 Auth::routes(["register"=>false]);
 
 
-Route::group(["prefix"=>"admin"],function(){
+Route::get("/logout",function (){
+    \Illuminate\Support\Facades\Auth::logout();
+    return redirect("home");
+});
+//Route::group(["prefix"=>"admin"],function(){
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
 
 
@@ -35,5 +39,5 @@ Route::group(["prefix"=>"admin"],function(){
     Route::resource('backgrounds', App\Http\Controllers\BackgroundController::class);
 
     Route::resource('contacts', App\Http\Controllers\ContactController::class);
-});
+//});
 
