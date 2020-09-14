@@ -13,10 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/",[\App\Http\Controllers\FrontendController::class,"index"])->name("home");
+Route::get("/manager",[\App\Http\Controllers\FrontendController::class,"managers"])->name("managers");
+Route::get("/docs",[\App\Http\Controllers\FrontendController::class,"document"])->name("docs");
+
+Auth::routes(["register"=>false]);
+
+
+Route::group(["prefix"=>"admin"],function(){
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
+
+
+    Route::resource('managers', App\Http\Controllers\ManagerController::class);
+
+    Route::resource('documents', App\Http\Controllers\DocumentController::class);
+
+    Route::resource('files', App\Http\Controllers\FileController::class);
+
+    Route::resource('headers', App\Http\Controllers\HeaderController::class);
+
+    Route::resource('backgrounds', App\Http\Controllers\BackgroundController::class);
+
+    Route::resource('contacts', App\Http\Controllers\ContactController::class);
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
