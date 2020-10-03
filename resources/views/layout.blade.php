@@ -24,7 +24,7 @@
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="https://one.callback.pw/widget/28e55ece-bbe2-44ae-8781-160f69f0138a"></script>
+
 </head>
 <style>
     #container {
@@ -211,6 +211,7 @@
 <script src="/assets/js/map.js"></script>
 <script src="/assets/js/jquery.inputmask.min.js"></script>
 <script src="/assets/js/inputmask.binding.js"></script>
+<script type="text/javascript" src="https://one.callback.pw/widget/5f5f8327-0263-4906-8593-1c0fb1f1026d"></script>
 </body>
 
 </html>
