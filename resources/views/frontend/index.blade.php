@@ -2,7 +2,7 @@
 
 @section("content")
 
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center" style="background-image: url('https://motionarray.imgix.net/preview-131964-qSjkYpRvPN-high_0005.jpg')">
         <div class="container">
             @if (isset($success))
                 <div class="alert alert-success">{{$success}}</div>
@@ -50,23 +50,23 @@
     <main id="main">
 
 
-        <div class="container d-none d-sm-block">
-            <div class="row">
-            <div class="col-md-4 col-sm-12 offset-md-8 mt-5" style="min-height: 80px; border: 1px solid #FFBF75; border-radius: 20px; ">
-                <a href="tel:87789959862">
-                    <div class="row" >
-                            <div class="col-md-2 col-sm-2 d-flex justify-content-center align-content-center" style="min-height: 50px; padding: 15px 0">
-                                <i class="icofont-phone" style="font-size: 50px; color: #FFBF75"></i>
-                            </div>
-                            <div class="col-md-10 col-sm-10" style="min-height: 50px;">
-                                <p style="margin-top: 15px">Есть вопросы?<br>
-                                    Позвоните нашему оператору!</p>
-                            </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        </div>
+{{--        <div class="container d-none d-sm-block">--}}
+{{--            <div class="row">--}}
+{{--            <div class="col-md-4 col-sm-12 offset-md-8 mt-5" style="min-height: 80px; border: 1px solid #FFBF75; border-radius: 20px; ">--}}
+{{--                <a href="tel:87789959862">--}}
+{{--                    <div class="row" >--}}
+{{--                            <div class="col-md-2 col-sm-2 d-flex justify-content-center align-content-center" style="min-height: 50px; padding: 15px 0">--}}
+{{--                                <i class="icofont-phone" style="font-size: 50px; color: #FFBF75"></i>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-10 col-sm-10" style="min-height: 50px;">--}}
+{{--                                <p style="margin-top: 15px">Есть вопросы?<br>--}}
+{{--                                    Позвоните нашему оператору!</p>--}}
+{{--                            </div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        </div>--}}
 
         <section style="padding: 20px 0" id="about" class="about">
             <div class="container">
