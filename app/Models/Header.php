@@ -50,7 +50,7 @@ class Header extends Model
      */
     public static $rules = [
         'header' => 'required|string|max:255',
-        'subheader' => 'required|string|max:255',
+        'subheader' => 'required|string',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
     ];
