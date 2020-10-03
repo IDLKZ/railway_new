@@ -644,20 +644,29 @@
                 <div class="row">
 
                     <div class="col-lg-5 d-flex align-items-stretch">
-                        <div class="info">
+                        @if(count($contact)>0)
+                            <div class="info">
+                            @foreach($contact as $item)
+                                @if($item->address)
                             <div class="address">
                                 <i class="icofont-google-map"></i>
                                 <h4>Адрес:</h4>
-                                <p>Астана, Богенбай 43</p>
+                                <p>{{$item->address}}</p>
                             </div>
-
+                                    @endif
+                            @if($item->phone)
                             <div class="phone">
                                 <i class="icofont-phone"></i>
                                 <h4>Номер:</h4>
-                                <p>+7 778 995 9862</p>
+                                <p>{{$item->phone}}</p>
                             </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d5002.595122783754!2d71.41172972814535!3d51.17673831832839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4245872c6d6a0ebb%3A0x5592bf93f36c3571!2z0L_RgNC-0YHQvy4g0JHQvtCz0LXQvdCx0LDQuSDQsdCw0YLRi9GA0LAgNDMsINCd0YPRgC3QodGD0LvRgtCw0L0gMDEwMDAw!3m2!1d51.1767384!2d71.41610709999999!5e0!3m2!1sru!2skz!4v1599144593103!5m2!1sru!2skz"  frameborder="0" style="border:0; width: 100%; height: 290px;" aria-hidden="false" tabindex="0"></iframe>
+                            @endif
+                            @endforeach
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.78404127632!2d71.42146741575611!3d51.13089137957511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42458713a6ad47d5%3A0x51b4bb921db67e09!2z0JHQpiBFbWVyYWxkIFRvd2Vy!5e0!3m2!1sru!2skz!4v1601745049356!5m2!1sru!2skz" style="border:0; width: 100%; height: 290px;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
+                        @endif
+
+
 
                     </div>
 
