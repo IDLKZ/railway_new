@@ -15,8 +15,8 @@
             @if(count($manager)>0)
                 <div class="owl-carousel testimonials-carousel ">
                 @foreach($manager as $item)
-                        <div class="member p-2 text-center testimonial-item ">
-                            <img src="{{$item->img}}" alt="" style="width: 294px;height:294px;">
+                        <div class="member p-2 text-center ">
+                            <img src="{{$item->img}}" alt="" style="width: 90%;height:294px;display: inline">
                             <h4 class="m-0">{{$item->name}}</h4>
                             <span>{{$item->role}}</span>
                             <p class="m-0">
@@ -28,7 +28,7 @@
                                 <a href=""><i class="icofont-instagram"></i></a>
                                 <a href=""><i class="icofont-linkedin"></i></a>
                             </div>
-                        </div
+                        </div>
                 @endforeach
                 </div>
             @else
