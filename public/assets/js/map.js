@@ -35,6 +35,9 @@ Highcharts.mapChart('container', {
     styledMode: true,
     tooltip: {
         enabled: true,
+        style:{
+            fontFamily:"Raleway, sans-serif",
+        },
         formatter: function (){
             switch (this.point.name){
                 case "Павлодарская область":
