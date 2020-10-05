@@ -131,6 +131,11 @@ Highcharts.mapChart('container', {
         dataLabels: {
 
             enabled: true,
+            style:{
+                fontWeight:"normal",
+                fontFamily:"Raleway, sans-serif",
+                fontSize:"12px",
+            },
             format:"{point.name}"
 
         },

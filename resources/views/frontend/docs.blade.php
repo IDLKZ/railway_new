@@ -17,13 +17,13 @@
                    <div class="row">
                        <div class="col-md-8 offset-md-2">
                            <div class="row mt-4 docs p-3">
-                               <div class="col-md-2 col-sm-12 text-center docs-div-icon d-none d-sm-block" >
+                               <div class="col-md-3 col-sm-12 text-center docs-div-icon d-none d-sm-block" >
                                    <i class="icofont-file-document docs-icon-left" ></i>
                                </div>
                                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                                    <h4 class="text-center docs-text-main" >{{$item["title"]}}</h4>
                                </div>
-                               <div class="col-md-4 col-sm-12 text-center docs-div-icon">
+                               <div class="col-md-3 col-sm-12 text-center docs-div-icon">
                                    <div class="row justify-content-center">
                                        @foreach($item["links"] as $k => $item)
                                            <a class="mr-3 text-dark" href="{{$item}}" download > <i style="color: {{$color = $k=="pdf"?"red":"blue"}}" class="icofont-file-{{$k}} docs-icon" ></i><br>Скачать</a>

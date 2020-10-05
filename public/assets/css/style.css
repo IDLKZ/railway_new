@@ -1469,3 +1469,8 @@ section {
     padding: 0;
     font-family: "Open Sans", sans-serif;
 }
+@media  (min-width: 768px) {
+    .slider-img{
+        height: 390px;
+    }
+}

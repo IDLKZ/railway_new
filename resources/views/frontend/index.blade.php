@@ -2,7 +2,7 @@
 
 @section("content")
 
-    <section id="hero" class="d-flex align-items-center" style="background-image: url('https://motionarray.imgix.net/preview-131964-qSjkYpRvPN-high_0005.jpg')">
+    <section id="hero" class="d-flex align-items-center">
         <div class="container">
             @if (isset($success))
                 <div class="alert alert-success">{{$success}}</div>
