@@ -1410,7 +1410,7 @@ section {
 }
 @media (max-width: 400px) {
     #hero h2{
-        font-size: 10px;
+        font-size:10px!important; ;
     }
     .owl-stage-outer{
         padding-top: 120px;
