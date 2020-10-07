@@ -10,7 +10,7 @@
             <div class="section-title mt-2">
                 <span>Руководители</span>
                 <h2>Руководители</h2>
-                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+{{--                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>--}}
             </div>
             @if(count($manager)>0)
                 <div class="owl-carousel testimonials-carousel ">

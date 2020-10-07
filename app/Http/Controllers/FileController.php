@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateFileRequest;
 use App\Http\Requests\UpdateFileRequest;
+use App\Models\Document;
 use App\Models\Image;
 use App\Repositories\FileRepository;
 use App\Http\Controllers\AppBaseController;
@@ -56,7 +57,8 @@ class FileController extends AppBaseController
     public function store(CreateFileRequest $request)
     {
         $input = $request->all();
-        $input["img"] = Image::createImage($request,"/assets/upload/doc/");
+        $name = Document::find($request->get("document_id"));
+        $input["img"] = Image::createImage($request,"/assets/upload/doc/", $name->title);
         $file = $this->fileRepository->create($input);
 
         Flash::success('Файл успешно сохранен.');
@@ -122,7 +124,8 @@ class FileController extends AppBaseController
             return redirect(route('files.index'));
         }
         $input = $request->all();
-        $input["img"] = Image::createImage($request,"/assets/upload/doc/");
+        $name = Document::find($request->get("document_id"));
+        $input["img"] = Image::updateImage($file,$request,"/assets/upload/doc/",$name->title);
         $file = $this->fileRepository->update($input, $id);
 
         Flash::success('Файл успешно обновлен.');
