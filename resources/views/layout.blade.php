@@ -56,7 +56,7 @@
         <h1 class="logo mr-auto">
             <a href="{{route('home')}}" style="font-size: 16px">
                 <img src="assets/img/logo-header.png" width="70" height="67" alt="">
-                Вагонный Сервис
+
             </a>
         </h1>
         <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->

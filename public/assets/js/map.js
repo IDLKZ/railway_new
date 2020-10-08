@@ -135,6 +135,7 @@ Highcharts.mapChart('container', {
 
             enabled: true,
             style:{
+                strokeOpacity: screen.width>768 ? 0 : 1,
                 fontWeight:"normal",
                 fontFamily:"Raleway, sans-serif",
                 fontSize:"12px",
