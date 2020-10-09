@@ -1474,4 +1474,9 @@ section {
     .slider-img{
         height: 390px;
     }
+    .my-logo{
+        max-height: none!important;
+        height: 90px!important;
+        width: 120px!important;
+    }
 }
