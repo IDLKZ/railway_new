@@ -630,7 +630,7 @@
                 </div>
 
                 <div class="text-center">
-                    <a href="{{route('home')}}#contact" class="btn btn-get-started2" style="background-color: #f95607">Оставить заявку</a>
+{{--                    <a href="{{route('home')}}#contact" class="btn btn-get-started2" style="background-color: #f95607">Оставить заявку</a>--}}
                 </div>
             </div>
         </section>
